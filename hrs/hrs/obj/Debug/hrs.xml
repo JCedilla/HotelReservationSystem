@@ -22,7 +22,17 @@ hrs
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:hrs.My.Resources.Resources._180329165216_royal_suite_at_the_burj_al_arab_jumeirah">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:hrs.My.Resources.Resources.bedroom_3475656_960_720">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:hrs.My.Resources.Resources.hotel_595121_960_720">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -32,7 +42,22 @@ hrs
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:hrs.My.Resources.Resources.hotel_7540353_960_7201">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:hrs.My.Resources.Resources.istockphoto_1472439241_612x612">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:hrs.My.Resources.Resources.living_room_4809587_960_720">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:hrs.My.Resources.Resources.premium_hotel">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

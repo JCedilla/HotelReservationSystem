@@ -142,5 +142,20 @@
   <ItemGroup>
     <None Include="Resources\living-room-4809587_960_720.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel-7540353_960_7201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premium hotel.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1472439241-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel-595121_960_720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\180329165216-royal-suite-at-the-burj-al-arab-jumeirah.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

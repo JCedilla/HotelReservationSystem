@@ -118,13 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="hotel-595121_960_720" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hotel-595121_960_720.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="hotel-7540353_960_720" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hotel-7540353_960_720.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="living-room-4809587_960_720" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\living-room-4809587_960_720.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hotel-7540353_960_7201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hotel-7540353_960_7201.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="istockphoto-1472439241-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\istockphoto-1472439241-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premium hotel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premium hotel.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bedroom-3475656_960_720" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bedroom-3475656_960_720.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="living-room-4809587_960_720" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\living-room-4809587_960_720.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="180329165216-royal-suite-at-the-burj-al-arab-jumeirah" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\180329165216-royal-suite-at-the-burj-al-arab-jumeirah.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

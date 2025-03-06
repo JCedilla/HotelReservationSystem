@@ -2,6 +2,7 @@
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' INVISIBLE ELEMENTS UPON LOAD
+        MainPanel.Visible = True
         ViewUsersPanel.Visible = False
         ManageBookingsPanel.Visible = False
         ViewBookingPanel.Visible = False
@@ -13,6 +14,12 @@
         SingleBtn.Checked = False
         DoubleInformation.Visible = False
         DoublePicture.Visible = False
+        PremiumInformation.Visible = False
+        PremiumPicture.Visible = False
+        ExquisiteInformation.Visible = False
+        ExquisitePicture.Visible = False
+        GrandInformation.Visible = False
+        GrandPicture.Visible = False
     End Sub
 
     Private Sub BtnHotelPictures_Click(sender As Object, e As EventArgs) Handles BtnHotelPictures.Click
@@ -80,15 +87,33 @@
     End Sub
 
     Private Sub BtnPremium_CheckedChanged(sender As Object, e As EventArgs) Handles BtnPremium.CheckedChanged
-
+        If (BtnPremium.Checked = True) Then
+            PremiumInformation.Visible = True
+            PremiumPicture.Visible = True
+        Else
+            PremiumInformation.Visible = False
+            PremiumPicture.Visible = False
+        End If
     End Sub
 
     Private Sub BtnExquisite_CheckedChanged(sender As Object, e As EventArgs) Handles BtnExquisite.CheckedChanged
-
+        If (BtnExquisite.Checked = True) Then
+            ExquisiteInformation.Visible = True
+            ExquisitePicture.Visible = True
+        Else
+            ExquisiteInformation.Visible = False
+            ExquisitePicture.Visible = False
+        End If
     End Sub
 
     Private Sub BtnGrand_CheckedChanged(sender As Object, e As EventArgs) Handles BtnGrand.CheckedChanged
-
+        If (BtnGrand.Checked = True) Then
+            GrandInformation.Visible = True
+            GrandPicture.Visible = True
+        Else
+            GrandInformation.Visible = False
+            GrandPicture.Visible = False
+        End If
     End Sub
 
 

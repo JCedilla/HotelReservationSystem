@@ -23,6 +23,7 @@ Public Class LogInForm
                     MsgBox("Username and Password cannot be blank!", vbExclamation, "Login Failed")
                     Exit Sub
                 End If
+                ' Check if connection was left open, Then closes it (for safety)
                 If conn.State = ConnectionState.Open Then
                     conn.Close()
                 End If
