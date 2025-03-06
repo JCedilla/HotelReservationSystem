@@ -13,3 +13,4 @@ C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\bin\Debug\System.Data
 C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\bin\Debug\System.Data.SqlClient.xml
 C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\obj\Debug\hrs.vbproj.Up2Date
 C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\obj\Debug\hrs.LogInForm.resources
+C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\obj\Debug\hrs.MainForm.resources

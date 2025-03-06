@@ -110,6 +110,9 @@
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -129,6 +132,15 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel-7540353_960_720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedroom-3475656_960_720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\living-room-4809587_960_720.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
