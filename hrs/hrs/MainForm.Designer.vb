@@ -22,6 +22,7 @@ Partial Class MainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.BtnHotelPictures = New System.Windows.Forms.Button()
         Me.SideBar = New System.Windows.Forms.Panel()
         Me.BtnBook = New System.Windows.Forms.Button()
@@ -35,45 +36,6 @@ Partial Class MainForm
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ViewHotelRoomsPanel = New System.Windows.Forms.Panel()
-        Me.DoubleInformation = New System.Windows.Forms.GroupBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.SingleInformation = New System.Windows.Forms.GroupBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.SideBarVHR = New System.Windows.Forms.GroupBox()
-        Me.BtnGrand = New System.Windows.Forms.RadioButton()
-        Me.BtnExquisite = New System.Windows.Forms.RadioButton()
-        Me.BtnPremium = New System.Windows.Forms.RadioButton()
-        Me.BtnDouble = New System.Windows.Forms.RadioButton()
-        Me.SingleBtn = New System.Windows.Forms.RadioButton()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.ViewBookingPanel = New System.Windows.Forms.Panel()
-        Me.PolicyPanel = New System.Windows.Forms.Panel()
-        Me.ManageBookingsPanel = New System.Windows.Forms.Panel()
-        Me.ViewUsersPanel = New System.Windows.Forms.Panel()
-        Me.PremiumInformation = New System.Windows.Forms.GroupBox()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.ExquisiteInformation = New System.Windows.Forms.GroupBox()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.Label27 = New System.Windows.Forms.Label()
         Me.GrandInformation = New System.Windows.Forms.GroupBox()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
@@ -82,27 +44,85 @@ Partial Class MainForm
         Me.Label32 = New System.Windows.Forms.Label()
         Me.Label33 = New System.Windows.Forms.Label()
         Me.GrandPicture = New System.Windows.Forms.PictureBox()
+        Me.ExquisiteInformation = New System.Windows.Forms.GroupBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
         Me.ExquisitePicture = New System.Windows.Forms.PictureBox()
+        Me.PremiumInformation = New System.Windows.Forms.GroupBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
         Me.PremiumPicture = New System.Windows.Forms.PictureBox()
+        Me.SingleInformation = New System.Windows.Forms.GroupBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SinglePicture = New System.Windows.Forms.PictureBox()
+        Me.DoubleInformation = New System.Windows.Forms.GroupBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.DoublePicture = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.SideBarVHR = New System.Windows.Forms.GroupBox()
+        Me.BtnGrand = New System.Windows.Forms.RadioButton()
+        Me.BtnExquisite = New System.Windows.Forms.RadioButton()
+        Me.BtnPremium = New System.Windows.Forms.RadioButton()
+        Me.BtnDouble = New System.Windows.Forms.RadioButton()
+        Me.SingleBtn = New System.Windows.Forms.RadioButton()
+        Me.ViewBookingPanel = New System.Windows.Forms.Panel()
+        Me.PolicyPanel = New System.Windows.Forms.Panel()
+        Me.ManageBookingsPanel = New System.Windows.Forms.Panel()
+        Me.ViewUsersPanel = New System.Windows.Forms.Panel()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MainPanel = New System.Windows.Forms.Panel()
+        Me.HRS_DBDataSet = New hrs.HRS_DBDataSet()
+        Me.HRSDBDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.HRS_DBDataSet1 = New hrs.HRS_DBDataSet1()
+        Me.UsersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.UsersTableAdapter = New hrs.HRS_DBDataSet1TableAdapters.UsersTableAdapter()
+        Me.UserIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UsernameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PasswordDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RoleDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BtnDeleteUser = New System.Windows.Forms.Button()
+        Me.TxtUserIDDelete = New System.Windows.Forms.TextBox()
         Me.SideBar.SuspendLayout()
         Me.ViewHotelRoomsPanel.SuspendLayout()
-        Me.DoubleInformation.SuspendLayout()
-        Me.SingleInformation.SuspendLayout()
-        Me.SideBarVHR.SuspendLayout()
-        Me.PremiumInformation.SuspendLayout()
-        Me.ExquisiteInformation.SuspendLayout()
         Me.GrandInformation.SuspendLayout()
         CType(Me.GrandPicture, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ExquisiteInformation.SuspendLayout()
         CType(Me.ExquisitePicture, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PremiumInformation.SuspendLayout()
         CType(Me.PremiumPicture, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SingleInformation.SuspendLayout()
         CType(Me.SinglePicture, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DoubleInformation.SuspendLayout()
         CType(Me.DoublePicture, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SideBarVHR.SuspendLayout()
+        Me.ViewUsersPanel.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainPanel.SuspendLayout()
+        CType(Me.HRS_DBDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HRSDBDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HRS_DBDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BtnHotelPictures
@@ -267,397 +287,6 @@ Partial Class MainForm
         Me.ViewHotelRoomsPanel.Size = New System.Drawing.Size(984, 463)
         Me.ViewHotelRoomsPanel.TabIndex = 7
         '
-        'DoubleInformation
-        '
-        Me.DoubleInformation.Controls.Add(Me.Label10)
-        Me.DoubleInformation.Controls.Add(Me.Label11)
-        Me.DoubleInformation.Controls.Add(Me.Label12)
-        Me.DoubleInformation.Controls.Add(Me.Label13)
-        Me.DoubleInformation.Controls.Add(Me.Label14)
-        Me.DoubleInformation.Controls.Add(Me.Label15)
-        Me.DoubleInformation.Location = New System.Drawing.Point(233, 343)
-        Me.DoubleInformation.Name = "DoubleInformation"
-        Me.DoubleInformation.Size = New System.Drawing.Size(739, 106)
-        Me.DoubleInformation.TabIndex = 6
-        Me.DoubleInformation.TabStop = False
-        Me.DoubleInformation.Text = "Information"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Times New Roman", 30.0!)
-        Me.Label10.Location = New System.Drawing.Point(395, 35)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(285, 46)
-        Me.Label10.TabIndex = 5
-        Me.Label10.Text = "6000₱ Per Night"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(8, 80)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(83, 13)
-        Me.Label11.TabIndex = 4
-        Me.Label11.Text = "Medium Cabinet"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(7, 66)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(84, 13)
-        Me.Label12.TabIndex = 3
-        Me.Label12.Text = "Mini Refrigerator"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(7, 51)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(211, 13)
-        Me.Label13.TabIndex = 2
-        Me.Label13.Text = "Mini kitchen (Micro wave and Rice Cooker)"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(6, 35)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(248, 13)
-        Me.Label14.TabIndex = 1
-        Me.Label14.Text = "One Bathroom (Shower and Toilet, Small Bath Tub)"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(7, 20)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(86, 13)
-        Me.Label15.TabIndex = 0
-        Me.Label15.Text = "Double Bedroom"
-        '
-        'SingleInformation
-        '
-        Me.SingleInformation.Controls.Add(Me.Label9)
-        Me.SingleInformation.Controls.Add(Me.Label8)
-        Me.SingleInformation.Controls.Add(Me.Label7)
-        Me.SingleInformation.Controls.Add(Me.Label6)
-        Me.SingleInformation.Controls.Add(Me.Label5)
-        Me.SingleInformation.Controls.Add(Me.Label4)
-        Me.SingleInformation.Location = New System.Drawing.Point(233, 343)
-        Me.SingleInformation.Name = "SingleInformation"
-        Me.SingleInformation.Size = New System.Drawing.Size(739, 106)
-        Me.SingleInformation.TabIndex = 3
-        Me.SingleInformation.TabStop = False
-        Me.SingleInformation.Text = "Information"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Times New Roman", 30.0!)
-        Me.Label9.Location = New System.Drawing.Point(395, 35)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(285, 46)
-        Me.Label9.TabIndex = 5
-        Me.Label9.Text = "3000₱ Per Night"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(8, 80)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(71, 13)
-        Me.Label8.TabIndex = 4
-        Me.Label8.Text = "Small Cabinet"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(7, 66)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(84, 13)
-        Me.Label7.TabIndex = 3
-        Me.Label7.Text = "Mini Refrigerator"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(7, 51)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(211, 13)
-        Me.Label6.TabIndex = 2
-        Me.Label6.Text = "Mini kitchen (Micro wave and Rice Cooker)"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(6, 35)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(170, 13)
-        Me.Label5.TabIndex = 1
-        Me.Label5.Text = "One Bathroom (Shower and Toilet)"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(7, 20)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(81, 13)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Single Bedroom"
-        '
-        'SideBarVHR
-        '
-        Me.SideBarVHR.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.SideBarVHR.Controls.Add(Me.BtnGrand)
-        Me.SideBarVHR.Controls.Add(Me.BtnExquisite)
-        Me.SideBarVHR.Controls.Add(Me.BtnPremium)
-        Me.SideBarVHR.Controls.Add(Me.BtnDouble)
-        Me.SideBarVHR.Controls.Add(Me.SingleBtn)
-        Me.SideBarVHR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.SideBarVHR.Location = New System.Drawing.Point(4, 12)
-        Me.SideBarVHR.Name = "SideBarVHR"
-        Me.SideBarVHR.Size = New System.Drawing.Size(208, 394)
-        Me.SideBarVHR.TabIndex = 1
-        Me.SideBarVHR.TabStop = False
-        Me.SideBarVHR.Text = "Room Types"
-        '
-        'BtnGrand
-        '
-        Me.BtnGrand.AutoSize = True
-        Me.BtnGrand.Font = New System.Drawing.Font("Times New Roman", 25.0!)
-        Me.BtnGrand.Location = New System.Drawing.Point(20, 334)
-        Me.BtnGrand.Name = "BtnGrand"
-        Me.BtnGrand.Size = New System.Drawing.Size(118, 43)
-        Me.BtnGrand.TabIndex = 4
-        Me.BtnGrand.Text = "Grand"
-        Me.BtnGrand.UseVisualStyleBackColor = True
-        '
-        'BtnExquisite
-        '
-        Me.BtnExquisite.AutoSize = True
-        Me.BtnExquisite.Font = New System.Drawing.Font("Times New Roman", 25.0!)
-        Me.BtnExquisite.Location = New System.Drawing.Point(16, 248)
-        Me.BtnExquisite.Name = "BtnExquisite"
-        Me.BtnExquisite.Size = New System.Drawing.Size(162, 43)
-        Me.BtnExquisite.TabIndex = 3
-        Me.BtnExquisite.Text = "Exquisite"
-        Me.BtnExquisite.UseVisualStyleBackColor = True
-        '
-        'BtnPremium
-        '
-        Me.BtnPremium.AutoSize = True
-        Me.BtnPremium.Font = New System.Drawing.Font("Times New Roman", 25.0!)
-        Me.BtnPremium.Location = New System.Drawing.Point(16, 174)
-        Me.BtnPremium.Name = "BtnPremium"
-        Me.BtnPremium.Size = New System.Drawing.Size(158, 43)
-        Me.BtnPremium.TabIndex = 2
-        Me.BtnPremium.Text = "Premium"
-        Me.BtnPremium.UseVisualStyleBackColor = True
-        '
-        'BtnDouble
-        '
-        Me.BtnDouble.AutoSize = True
-        Me.BtnDouble.Font = New System.Drawing.Font("Times New Roman", 25.0!)
-        Me.BtnDouble.Location = New System.Drawing.Point(16, 96)
-        Me.BtnDouble.Name = "BtnDouble"
-        Me.BtnDouble.Size = New System.Drawing.Size(134, 43)
-        Me.BtnDouble.TabIndex = 1
-        Me.BtnDouble.Text = "Double"
-        Me.BtnDouble.UseVisualStyleBackColor = True
-        '
-        'SingleBtn
-        '
-        Me.SingleBtn.AutoSize = True
-        Me.SingleBtn.Font = New System.Drawing.Font("Times New Roman", 25.0!)
-        Me.SingleBtn.Location = New System.Drawing.Point(20, 19)
-        Me.SingleBtn.Name = "SingleBtn"
-        Me.SingleBtn.Size = New System.Drawing.Size(120, 43)
-        Me.SingleBtn.TabIndex = 0
-        Me.SingleBtn.Text = "Single"
-        Me.SingleBtn.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Gold
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(4, 409)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(208, 52)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Return"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'ViewBookingPanel
-        '
-        Me.ViewBookingPanel.Location = New System.Drawing.Point(0, 0)
-        Me.ViewBookingPanel.Name = "ViewBookingPanel"
-        Me.ViewBookingPanel.Size = New System.Drawing.Size(1, 1)
-        Me.ViewBookingPanel.TabIndex = 8
-        '
-        'PolicyPanel
-        '
-        Me.PolicyPanel.Location = New System.Drawing.Point(0, 0)
-        Me.PolicyPanel.Name = "PolicyPanel"
-        Me.PolicyPanel.Size = New System.Drawing.Size(1, 1)
-        Me.PolicyPanel.TabIndex = 8
-        '
-        'ManageBookingsPanel
-        '
-        Me.ManageBookingsPanel.Location = New System.Drawing.Point(0, 0)
-        Me.ManageBookingsPanel.Name = "ManageBookingsPanel"
-        Me.ManageBookingsPanel.Size = New System.Drawing.Size(1, 1)
-        Me.ManageBookingsPanel.TabIndex = 8
-        '
-        'ViewUsersPanel
-        '
-        Me.ViewUsersPanel.Location = New System.Drawing.Point(0, 0)
-        Me.ViewUsersPanel.Name = "ViewUsersPanel"
-        Me.ViewUsersPanel.Size = New System.Drawing.Size(1, 1)
-        Me.ViewUsersPanel.TabIndex = 8
-        '
-        'PremiumInformation
-        '
-        Me.PremiumInformation.Controls.Add(Me.Label16)
-        Me.PremiumInformation.Controls.Add(Me.Label17)
-        Me.PremiumInformation.Controls.Add(Me.Label18)
-        Me.PremiumInformation.Controls.Add(Me.Label19)
-        Me.PremiumInformation.Controls.Add(Me.Label20)
-        Me.PremiumInformation.Controls.Add(Me.Label21)
-        Me.PremiumInformation.Location = New System.Drawing.Point(233, 343)
-        Me.PremiumInformation.Name = "PremiumInformation"
-        Me.PremiumInformation.Size = New System.Drawing.Size(739, 106)
-        Me.PremiumInformation.TabIndex = 7
-        Me.PremiumInformation.TabStop = False
-        Me.PremiumInformation.Text = "Information"
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Times New Roman", 30.0!)
-        Me.Label16.Location = New System.Drawing.Point(395, 35)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(285, 46)
-        Me.Label16.TabIndex = 5
-        Me.Label16.Text = "8000₱ Per Night"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(8, 80)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(83, 13)
-        Me.Label17.TabIndex = 4
-        Me.Label17.Text = "Medium Cabinet"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(7, 66)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(91, 13)
-        Me.Label18.TabIndex = 3
-        Me.Label18.Text = "Huge Refrigerator"
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(7, 51)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(372, 13)
-        Me.Label19.TabIndex = 2
-        Me.Label19.Text = "Kitchen (Micro wave and Rice Cooker, Air fryer, Coffee maker, Electric Stove)"
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(6, 35)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(220, 13)
-        Me.Label20.TabIndex = 1
-        Me.Label20.Text = "One Bathroom (Shower, Toilet, Big Bath Tub)"
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(7, 20)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(102, 13)
-        Me.Label21.TabIndex = 0
-        Me.Label21.Text = "King Sized Bedroom"
-        '
-        'ExquisiteInformation
-        '
-        Me.ExquisiteInformation.Controls.Add(Me.Label22)
-        Me.ExquisiteInformation.Controls.Add(Me.Label23)
-        Me.ExquisiteInformation.Controls.Add(Me.Label24)
-        Me.ExquisiteInformation.Controls.Add(Me.Label25)
-        Me.ExquisiteInformation.Controls.Add(Me.Label26)
-        Me.ExquisiteInformation.Controls.Add(Me.Label27)
-        Me.ExquisiteInformation.Location = New System.Drawing.Point(233, 343)
-        Me.ExquisiteInformation.Name = "ExquisiteInformation"
-        Me.ExquisiteInformation.Size = New System.Drawing.Size(739, 106)
-        Me.ExquisiteInformation.TabIndex = 8
-        Me.ExquisiteInformation.TabStop = False
-        Me.ExquisiteInformation.Text = "Information"
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Times New Roman", 30.0!)
-        Me.Label22.Location = New System.Drawing.Point(395, 35)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(305, 46)
-        Me.Label22.TabIndex = 5
-        Me.Label22.Text = "12000₱ Per Night"
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(8, 80)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(96, 13)
-        Me.Label23.TabIndex = 4
-        Me.Label23.Text = "Large Size Cabinet"
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(7, 66)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(91, 13)
-        Me.Label24.TabIndex = 3
-        Me.Label24.Text = "Huge Refrigerator"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(7, 51)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(134, 13)
-        Me.Label25.TabIndex = 2
-        Me.Label25.Text = "Large Kitchen (Full Utilities)"
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(6, 35)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(97, 13)
-        Me.Label26.TabIndex = 1
-        Me.Label26.Text = "Exquisite Bathroom"
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(7, 20)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(94, 13)
-        Me.Label27.TabIndex = 0
-        Me.Label27.Text = "Exquisite Bedroom"
-        '
         'GrandInformation
         '
         Me.GrandInformation.Controls.Add(Me.Label28)
@@ -738,6 +367,76 @@ Partial Class MainForm
         Me.GrandPicture.TabIndex = 9
         Me.GrandPicture.TabStop = False
         '
+        'ExquisiteInformation
+        '
+        Me.ExquisiteInformation.Controls.Add(Me.Label22)
+        Me.ExquisiteInformation.Controls.Add(Me.Label23)
+        Me.ExquisiteInformation.Controls.Add(Me.Label24)
+        Me.ExquisiteInformation.Controls.Add(Me.Label25)
+        Me.ExquisiteInformation.Controls.Add(Me.Label26)
+        Me.ExquisiteInformation.Controls.Add(Me.Label27)
+        Me.ExquisiteInformation.Location = New System.Drawing.Point(233, 343)
+        Me.ExquisiteInformation.Name = "ExquisiteInformation"
+        Me.ExquisiteInformation.Size = New System.Drawing.Size(739, 106)
+        Me.ExquisiteInformation.TabIndex = 8
+        Me.ExquisiteInformation.TabStop = False
+        Me.ExquisiteInformation.Text = "Information"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Times New Roman", 30.0!)
+        Me.Label22.Location = New System.Drawing.Point(395, 35)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(305, 46)
+        Me.Label22.TabIndex = 5
+        Me.Label22.Text = "12000₱ Per Night"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(8, 80)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(96, 13)
+        Me.Label23.TabIndex = 4
+        Me.Label23.Text = "Large Size Cabinet"
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Location = New System.Drawing.Point(7, 66)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(91, 13)
+        Me.Label24.TabIndex = 3
+        Me.Label24.Text = "Huge Refrigerator"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(7, 51)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(134, 13)
+        Me.Label25.TabIndex = 2
+        Me.Label25.Text = "Large Kitchen (Full Utilities)"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Location = New System.Drawing.Point(6, 35)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(97, 13)
+        Me.Label26.TabIndex = 1
+        Me.Label26.Text = "Exquisite Bathroom"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Location = New System.Drawing.Point(7, 20)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(94, 13)
+        Me.Label27.TabIndex = 0
+        Me.Label27.Text = "Exquisite Bedroom"
+        '
         'ExquisitePicture
         '
         Me.ExquisitePicture.Image = Global.hrs.My.Resources.Resources.hotel_595121_960_720
@@ -747,6 +446,76 @@ Partial Class MainForm
         Me.ExquisitePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.ExquisitePicture.TabIndex = 8
         Me.ExquisitePicture.TabStop = False
+        '
+        'PremiumInformation
+        '
+        Me.PremiumInformation.Controls.Add(Me.Label16)
+        Me.PremiumInformation.Controls.Add(Me.Label17)
+        Me.PremiumInformation.Controls.Add(Me.Label18)
+        Me.PremiumInformation.Controls.Add(Me.Label19)
+        Me.PremiumInformation.Controls.Add(Me.Label20)
+        Me.PremiumInformation.Controls.Add(Me.Label21)
+        Me.PremiumInformation.Location = New System.Drawing.Point(233, 343)
+        Me.PremiumInformation.Name = "PremiumInformation"
+        Me.PremiumInformation.Size = New System.Drawing.Size(739, 106)
+        Me.PremiumInformation.TabIndex = 7
+        Me.PremiumInformation.TabStop = False
+        Me.PremiumInformation.Text = "Information"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Times New Roman", 30.0!)
+        Me.Label16.Location = New System.Drawing.Point(395, 35)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(285, 46)
+        Me.Label16.TabIndex = 5
+        Me.Label16.Text = "8000₱ Per Night"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(8, 80)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(83, 13)
+        Me.Label17.TabIndex = 4
+        Me.Label17.Text = "Medium Cabinet"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(7, 66)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(91, 13)
+        Me.Label18.TabIndex = 3
+        Me.Label18.Text = "Huge Refrigerator"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(7, 51)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(372, 13)
+        Me.Label19.TabIndex = 2
+        Me.Label19.Text = "Kitchen (Micro wave and Rice Cooker, Air fryer, Coffee maker, Electric Stove)"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(6, 35)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(220, 13)
+        Me.Label20.TabIndex = 1
+        Me.Label20.Text = "One Bathroom (Shower, Toilet, Big Bath Tub)"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(7, 20)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(102, 13)
+        Me.Label21.TabIndex = 0
+        Me.Label21.Text = "King Sized Bedroom"
         '
         'PremiumPicture
         '
@@ -758,6 +527,76 @@ Partial Class MainForm
         Me.PremiumPicture.TabIndex = 7
         Me.PremiumPicture.TabStop = False
         '
+        'SingleInformation
+        '
+        Me.SingleInformation.Controls.Add(Me.Label9)
+        Me.SingleInformation.Controls.Add(Me.Label8)
+        Me.SingleInformation.Controls.Add(Me.Label7)
+        Me.SingleInformation.Controls.Add(Me.Label6)
+        Me.SingleInformation.Controls.Add(Me.Label5)
+        Me.SingleInformation.Controls.Add(Me.Label4)
+        Me.SingleInformation.Location = New System.Drawing.Point(233, 343)
+        Me.SingleInformation.Name = "SingleInformation"
+        Me.SingleInformation.Size = New System.Drawing.Size(739, 106)
+        Me.SingleInformation.TabIndex = 3
+        Me.SingleInformation.TabStop = False
+        Me.SingleInformation.Text = "Information"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Times New Roman", 30.0!)
+        Me.Label9.Location = New System.Drawing.Point(395, 35)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(285, 46)
+        Me.Label9.TabIndex = 5
+        Me.Label9.Text = "3000₱ Per Night"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(8, 80)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(71, 13)
+        Me.Label8.TabIndex = 4
+        Me.Label8.Text = "Small Cabinet"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(7, 66)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(84, 13)
+        Me.Label7.TabIndex = 3
+        Me.Label7.Text = "Mini Refrigerator"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(7, 51)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(211, 13)
+        Me.Label6.TabIndex = 2
+        Me.Label6.Text = "Mini kitchen (Micro wave and Rice Cooker)"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(6, 35)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(170, 13)
+        Me.Label5.TabIndex = 1
+        Me.Label5.Text = "One Bathroom (Shower and Toilet)"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(7, 20)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(81, 13)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Single Bedroom"
+        '
         'SinglePicture
         '
         Me.SinglePicture.Image = Global.hrs.My.Resources.Resources.bedroom_3475656_960_720
@@ -768,6 +607,76 @@ Partial Class MainForm
         Me.SinglePicture.TabIndex = 2
         Me.SinglePicture.TabStop = False
         '
+        'DoubleInformation
+        '
+        Me.DoubleInformation.Controls.Add(Me.Label10)
+        Me.DoubleInformation.Controls.Add(Me.Label11)
+        Me.DoubleInformation.Controls.Add(Me.Label12)
+        Me.DoubleInformation.Controls.Add(Me.Label13)
+        Me.DoubleInformation.Controls.Add(Me.Label14)
+        Me.DoubleInformation.Controls.Add(Me.Label15)
+        Me.DoubleInformation.Location = New System.Drawing.Point(233, 343)
+        Me.DoubleInformation.Name = "DoubleInformation"
+        Me.DoubleInformation.Size = New System.Drawing.Size(739, 106)
+        Me.DoubleInformation.TabIndex = 6
+        Me.DoubleInformation.TabStop = False
+        Me.DoubleInformation.Text = "Information"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Times New Roman", 30.0!)
+        Me.Label10.Location = New System.Drawing.Point(395, 35)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(285, 46)
+        Me.Label10.TabIndex = 5
+        Me.Label10.Text = "6000₱ Per Night"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(8, 80)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(83, 13)
+        Me.Label11.TabIndex = 4
+        Me.Label11.Text = "Medium Cabinet"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(7, 66)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(84, 13)
+        Me.Label12.TabIndex = 3
+        Me.Label12.Text = "Mini Refrigerator"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(7, 51)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(211, 13)
+        Me.Label13.TabIndex = 2
+        Me.Label13.Text = "Mini kitchen (Micro wave and Rice Cooker)"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(6, 35)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(248, 13)
+        Me.Label14.TabIndex = 1
+        Me.Label14.Text = "One Bathroom (Shower and Toilet, Small Bath Tub)"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(7, 20)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(86, 13)
+        Me.Label15.TabIndex = 0
+        Me.Label15.Text = "Double Bedroom"
+        '
         'DoublePicture
         '
         Me.DoublePicture.Image = Global.hrs.My.Resources.Resources.living_room_4809587_960_720
@@ -777,6 +686,145 @@ Partial Class MainForm
         Me.DoublePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.DoublePicture.TabIndex = 4
         Me.DoublePicture.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Gold
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(4, 409)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(208, 52)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "Return"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'SideBarVHR
+        '
+        Me.SideBarVHR.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.SideBarVHR.Controls.Add(Me.BtnGrand)
+        Me.SideBarVHR.Controls.Add(Me.BtnExquisite)
+        Me.SideBarVHR.Controls.Add(Me.BtnPremium)
+        Me.SideBarVHR.Controls.Add(Me.BtnDouble)
+        Me.SideBarVHR.Controls.Add(Me.SingleBtn)
+        Me.SideBarVHR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.SideBarVHR.Location = New System.Drawing.Point(4, 12)
+        Me.SideBarVHR.Name = "SideBarVHR"
+        Me.SideBarVHR.Size = New System.Drawing.Size(208, 394)
+        Me.SideBarVHR.TabIndex = 1
+        Me.SideBarVHR.TabStop = False
+        Me.SideBarVHR.Text = "Room Types"
+        '
+        'BtnGrand
+        '
+        Me.BtnGrand.AutoSize = True
+        Me.BtnGrand.Font = New System.Drawing.Font("Times New Roman", 25.0!)
+        Me.BtnGrand.Location = New System.Drawing.Point(20, 334)
+        Me.BtnGrand.Name = "BtnGrand"
+        Me.BtnGrand.Size = New System.Drawing.Size(118, 43)
+        Me.BtnGrand.TabIndex = 4
+        Me.BtnGrand.Text = "Grand"
+        Me.BtnGrand.UseVisualStyleBackColor = True
+        '
+        'BtnExquisite
+        '
+        Me.BtnExquisite.AutoSize = True
+        Me.BtnExquisite.Font = New System.Drawing.Font("Times New Roman", 25.0!)
+        Me.BtnExquisite.Location = New System.Drawing.Point(16, 248)
+        Me.BtnExquisite.Name = "BtnExquisite"
+        Me.BtnExquisite.Size = New System.Drawing.Size(162, 43)
+        Me.BtnExquisite.TabIndex = 3
+        Me.BtnExquisite.Text = "Exquisite"
+        Me.BtnExquisite.UseVisualStyleBackColor = True
+        '
+        'BtnPremium
+        '
+        Me.BtnPremium.AutoSize = True
+        Me.BtnPremium.Font = New System.Drawing.Font("Times New Roman", 25.0!)
+        Me.BtnPremium.Location = New System.Drawing.Point(16, 174)
+        Me.BtnPremium.Name = "BtnPremium"
+        Me.BtnPremium.Size = New System.Drawing.Size(158, 43)
+        Me.BtnPremium.TabIndex = 2
+        Me.BtnPremium.Text = "Premium"
+        Me.BtnPremium.UseVisualStyleBackColor = True
+        '
+        'BtnDouble
+        '
+        Me.BtnDouble.AutoSize = True
+        Me.BtnDouble.Font = New System.Drawing.Font("Times New Roman", 25.0!)
+        Me.BtnDouble.Location = New System.Drawing.Point(16, 96)
+        Me.BtnDouble.Name = "BtnDouble"
+        Me.BtnDouble.Size = New System.Drawing.Size(134, 43)
+        Me.BtnDouble.TabIndex = 1
+        Me.BtnDouble.Text = "Double"
+        Me.BtnDouble.UseVisualStyleBackColor = True
+        '
+        'SingleBtn
+        '
+        Me.SingleBtn.AutoSize = True
+        Me.SingleBtn.Font = New System.Drawing.Font("Times New Roman", 25.0!)
+        Me.SingleBtn.Location = New System.Drawing.Point(20, 19)
+        Me.SingleBtn.Name = "SingleBtn"
+        Me.SingleBtn.Size = New System.Drawing.Size(120, 43)
+        Me.SingleBtn.TabIndex = 0
+        Me.SingleBtn.Text = "Single"
+        Me.SingleBtn.UseVisualStyleBackColor = True
+        '
+        'ViewBookingPanel
+        '
+        Me.ViewBookingPanel.Location = New System.Drawing.Point(0, 0)
+        Me.ViewBookingPanel.Name = "ViewBookingPanel"
+        Me.ViewBookingPanel.Size = New System.Drawing.Size(1, 1)
+        Me.ViewBookingPanel.TabIndex = 8
+        '
+        'PolicyPanel
+        '
+        Me.PolicyPanel.Location = New System.Drawing.Point(0, 0)
+        Me.PolicyPanel.Name = "PolicyPanel"
+        Me.PolicyPanel.Size = New System.Drawing.Size(1, 1)
+        Me.PolicyPanel.TabIndex = 8
+        '
+        'ManageBookingsPanel
+        '
+        Me.ManageBookingsPanel.Location = New System.Drawing.Point(0, 0)
+        Me.ManageBookingsPanel.Name = "ManageBookingsPanel"
+        Me.ManageBookingsPanel.Size = New System.Drawing.Size(1, 1)
+        Me.ManageBookingsPanel.TabIndex = 8
+        '
+        'ViewUsersPanel
+        '
+        Me.ViewUsersPanel.BackColor = System.Drawing.Color.Gold
+        Me.ViewUsersPanel.Controls.Add(Me.TxtUserIDDelete)
+        Me.ViewUsersPanel.Controls.Add(Me.BtnDeleteUser)
+        Me.ViewUsersPanel.Controls.Add(Me.DataGridView1)
+        Me.ViewUsersPanel.Controls.Add(Me.Button2)
+        Me.ViewUsersPanel.Location = New System.Drawing.Point(0, 0)
+        Me.ViewUsersPanel.Name = "ViewUsersPanel"
+        Me.ViewUsersPanel.Size = New System.Drawing.Size(984, 463)
+        Me.ViewUsersPanel.TabIndex = 8
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.UserIDDataGridViewTextBoxColumn, Me.UsernameDataGridViewTextBoxColumn, Me.PasswordDataGridViewTextBoxColumn, Me.RoleDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.UsersBindingSource
+        Me.DataGridView1.Location = New System.Drawing.Point(391, 31)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(445, 329)
+        Me.DataGridView1.TabIndex = 11
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Gold
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(0, 412)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(208, 52)
+        Me.Button2.TabIndex = 10
+        Me.Button2.Text = "Return"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -800,14 +848,82 @@ Partial Class MainForm
         Me.MainPanel.TabIndex = 4
         Me.MainPanel.Visible = False
         '
+        'HRS_DBDataSet
+        '
+        Me.HRS_DBDataSet.DataSetName = "HRS_DBDataSet"
+        Me.HRS_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'HRSDBDataSetBindingSource
+        '
+        Me.HRSDBDataSetBindingSource.DataSource = Me.HRS_DBDataSet
+        Me.HRSDBDataSetBindingSource.Position = 0
+        '
+        'HRS_DBDataSet1
+        '
+        Me.HRS_DBDataSet1.DataSetName = "HRS_DBDataSet1"
+        Me.HRS_DBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'UsersBindingSource
+        '
+        Me.UsersBindingSource.DataMember = "Users"
+        Me.UsersBindingSource.DataSource = Me.HRS_DBDataSet1
+        '
+        'UsersTableAdapter
+        '
+        Me.UsersTableAdapter.ClearBeforeFill = True
+        '
+        'UserIDDataGridViewTextBoxColumn
+        '
+        Me.UserIDDataGridViewTextBoxColumn.DataPropertyName = "UserID"
+        Me.UserIDDataGridViewTextBoxColumn.HeaderText = "UserID"
+        Me.UserIDDataGridViewTextBoxColumn.Name = "UserIDDataGridViewTextBoxColumn"
+        '
+        'UsernameDataGridViewTextBoxColumn
+        '
+        Me.UsernameDataGridViewTextBoxColumn.DataPropertyName = "Username"
+        Me.UsernameDataGridViewTextBoxColumn.HeaderText = "Username"
+        Me.UsernameDataGridViewTextBoxColumn.Name = "UsernameDataGridViewTextBoxColumn"
+        '
+        'PasswordDataGridViewTextBoxColumn
+        '
+        Me.PasswordDataGridViewTextBoxColumn.DataPropertyName = "Password"
+        Me.PasswordDataGridViewTextBoxColumn.HeaderText = "Password"
+        Me.PasswordDataGridViewTextBoxColumn.Name = "PasswordDataGridViewTextBoxColumn"
+        '
+        'RoleDataGridViewTextBoxColumn
+        '
+        Me.RoleDataGridViewTextBoxColumn.DataPropertyName = "Role"
+        Me.RoleDataGridViewTextBoxColumn.HeaderText = "Role"
+        Me.RoleDataGridViewTextBoxColumn.Name = "RoleDataGridViewTextBoxColumn"
+        '
+        'BtnDeleteUser
+        '
+        Me.BtnDeleteUser.BackColor = System.Drawing.Color.Gold
+        Me.BtnDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnDeleteUser.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnDeleteUser.Location = New System.Drawing.Point(7, 80)
+        Me.BtnDeleteUser.Name = "BtnDeleteUser"
+        Me.BtnDeleteUser.Size = New System.Drawing.Size(220, 52)
+        Me.BtnDeleteUser.TabIndex = 12
+        Me.BtnDeleteUser.Text = "DELETE USERID :"
+        Me.BtnDeleteUser.UseVisualStyleBackColor = False
+        '
+        'TxtUserIDDelete
+        '
+        Me.TxtUserIDDelete.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtUserIDDelete.Location = New System.Drawing.Point(231, 93)
+        Me.TxtUserIDDelete.Name = "TxtUserIDDelete"
+        Me.TxtUserIDDelete.Size = New System.Drawing.Size(111, 30)
+        Me.TxtUserIDDelete.TabIndex = 13
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(984, 461)
+        Me.Controls.Add(Me.ViewUsersPanel)
         Me.Controls.Add(Me.ViewHotelRoomsPanel)
         Me.Controls.Add(Me.MainPanel)
-        Me.Controls.Add(Me.ViewUsersPanel)
         Me.Controls.Add(Me.ManageBookingsPanel)
         Me.Controls.Add(Me.PolicyPanel)
         Me.Controls.Add(Me.ViewBookingPanel)
@@ -818,26 +934,33 @@ Partial Class MainForm
         Me.SideBar.ResumeLayout(False)
         Me.SideBar.PerformLayout()
         Me.ViewHotelRoomsPanel.ResumeLayout(False)
-        Me.DoubleInformation.ResumeLayout(False)
-        Me.DoubleInformation.PerformLayout()
-        Me.SingleInformation.ResumeLayout(False)
-        Me.SingleInformation.PerformLayout()
-        Me.SideBarVHR.ResumeLayout(False)
-        Me.SideBarVHR.PerformLayout()
-        Me.PremiumInformation.ResumeLayout(False)
-        Me.PremiumInformation.PerformLayout()
-        Me.ExquisiteInformation.ResumeLayout(False)
-        Me.ExquisiteInformation.PerformLayout()
         Me.GrandInformation.ResumeLayout(False)
         Me.GrandInformation.PerformLayout()
         CType(Me.GrandPicture, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ExquisiteInformation.ResumeLayout(False)
+        Me.ExquisiteInformation.PerformLayout()
         CType(Me.ExquisitePicture, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PremiumInformation.ResumeLayout(False)
+        Me.PremiumInformation.PerformLayout()
         CType(Me.PremiumPicture, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SingleInformation.ResumeLayout(False)
+        Me.SingleInformation.PerformLayout()
         CType(Me.SinglePicture, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.DoubleInformation.ResumeLayout(False)
+        Me.DoubleInformation.PerformLayout()
         CType(Me.DoublePicture, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SideBarVHR.ResumeLayout(False)
+        Me.SideBarVHR.PerformLayout()
+        Me.ViewUsersPanel.ResumeLayout(False)
+        Me.ViewUsersPanel.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MainPanel.ResumeLayout(False)
         Me.MainPanel.PerformLayout()
+        CType(Me.HRS_DBDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HRSDBDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HRS_DBDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -908,4 +1031,17 @@ Partial Class MainForm
     Friend WithEvents Label33 As Label
     Friend WithEvents GrandPicture As PictureBox
     Friend WithEvents MainPanel As Panel
+    Friend WithEvents Button2 As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents HRSDBDataSetBindingSource As BindingSource
+    Friend WithEvents HRS_DBDataSet As HRS_DBDataSet
+    Friend WithEvents HRS_DBDataSet1 As HRS_DBDataSet1
+    Friend WithEvents UsersBindingSource As BindingSource
+    Friend WithEvents UsersTableAdapter As HRS_DBDataSet1TableAdapters.UsersTableAdapter
+    Friend WithEvents UserIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents UsernameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents PasswordDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents RoleDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents TxtUserIDDelete As TextBox
+    Friend WithEvents BtnDeleteUser As Button
 End Class
