@@ -3,8 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\dream\\source\\repos\\HotelReservationSystem\\hrs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{575A14C0-6E7A-419B-9B11-4BAB50A9ACE6}|hrs\\hrs.vbproj|c:\\users\\dream\\source\\repos\\hotelreservationsystem\\hrs\\hrs\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{575A14C0-6E7A-419B-9B11-4BAB50A9ACE6}|hrs\\hrs.vbproj|solutionrelative:hrs\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{575A14C0-6E7A-419B-9B11-4BAB50A9ACE6}|hrs\\hrs.vbproj|c:\\users\\dream\\source\\repos\\hotelreservationsystem\\hrs\\hrs\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{575A14C0-6E7A-419B-9B11-4BAB50A9ACE6}|hrs\\hrs.vbproj|solutionrelative:hrs\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|hrs||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{575A14C0-6E7A-419B-9B11-4BAB50A9ACE6}|hrs\\hrs.vbproj|c:\\users\\dream\\source\\repos\\hotelreservationsystem\\hrs\\hrs\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{575A14C0-6E7A-419B-9B11-4BAB50A9ACE6}|hrs\\hrs.vbproj|solutionrelative:hrs\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{575A14C0-6E7A-419B-9B11-4BAB50A9ACE6}|hrs\\hrs.vbproj|c:\\users\\dream\\source\\repos\\hotelreservationsystem\\hrs\\hrs\\mainform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{575A14C0-6E7A-419B-9B11-4BAB50A9ACE6}|hrs\\hrs.vbproj|solutionrelative:hrs\\mainform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{575A14C0-6E7A-419B-9B11-4BAB50A9ACE6}|hrs\\hrs.vbproj|c:\\users\\dream\\source\\repos\\hotelreservationsystem\\hrs\\hrs\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|8998e48e-b89a-4034-b66e-353d8c1fdc2e"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +28,53 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "hrs",
+              "DocumentMoniker": "C:\\Users\\dream\\source\\repos\\HotelReservationSystem\\hrs\\hrs\\hrs.vbproj",
+              "RelativeDocumentMoniker": "hrs\\hrs.vbproj",
+              "ToolTip": "C:\\Users\\dream\\source\\repos\\HotelReservationSystem\\hrs\\hrs\\hrs.vbproj",
+              "RelativeToolTip": "hrs\\hrs.vbproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-06T06:08:41.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\dream\\source\\repos\\HotelReservationSystem\\hrs\\hrs\\MainForm.vb",
+              "RelativeDocumentMoniker": "hrs\\MainForm.vb",
+              "ToolTip": "C:\\Users\\dream\\source\\repos\\HotelReservationSystem\\hrs\\hrs\\MainForm.vb [Design]",
+              "RelativeToolTip": "hrs\\MainForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-03-06T06:08:07.152Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\dream\\source\\repos\\HotelReservationSystem\\hrs\\hrs\\Form1.vb",
-              "RelativeDocumentMoniker": "hrs\\Form1.vb",
-              "ToolTip": "C:\\Users\\dream\\source\\repos\\HotelReservationSystem\\hrs\\hrs\\Form1.vb [Design]",
-              "RelativeToolTip": "hrs\\Form1.vb [Design]",
+              "Title": "LogInForm.vb",
+              "DocumentMoniker": "C:\\Users\\dream\\source\\repos\\HotelReservationSystem\\hrs\\hrs\\LogInForm.vb",
+              "RelativeDocumentMoniker": "hrs\\LogInForm.vb",
+              "ToolTip": "C:\\Users\\dream\\source\\repos\\HotelReservationSystem\\hrs\\hrs\\LogInForm.vb",
+              "RelativeToolTip": "hrs\\LogInForm.vb",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwEoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-03-06T05:14:37.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LogInForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\dream\\source\\repos\\HotelReservationSystem\\hrs\\hrs\\LogInForm.vb",
+              "RelativeDocumentMoniker": "hrs\\LogInForm.vb",
+              "ToolTip": "C:\\Users\\dream\\source\\repos\\HotelReservationSystem\\hrs\\hrs\\LogInForm.vb [Design]",
+              "RelativeToolTip": "hrs\\LogInForm.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-03-06T03:33:00.84Z",
               "EditorCaption": " [Design]"

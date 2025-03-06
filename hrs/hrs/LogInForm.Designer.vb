@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class LogInForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -134,7 +134,7 @@ Partial Class Form1
         Me.Controls.Add(Me.BtnRegister)
         Me.Controls.Add(Me.BtnLogin)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Cozy Hotel"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

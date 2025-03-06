@@ -3,10 +3,13 @@ C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\bin\Debug\hrs.exe
 C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\bin\Debug\hrs.pdb
 C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\bin\Debug\hrs.xml
 C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\obj\Debug\hrs.vbproj.AssemblyReference.cache
-C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\obj\Debug\hrs.Form1.resources
 C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\obj\Debug\hrs.Resources.resources
 C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\obj\Debug\hrs.vbproj.GenerateResource.cache
 C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\obj\Debug\hrs.vbproj.CoreCompileInputs.cache
 C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\obj\Debug\hrs.exe
 C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\obj\Debug\hrs.xml
 C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\obj\Debug\hrs.pdb
+C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\bin\Debug\System.Data.SqlClient.dll
+C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\bin\Debug\System.Data.SqlClient.xml
+C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\obj\Debug\hrs.vbproj.Up2Date
+C:\Users\dream\source\repos\HotelReservationSystem\hrs\hrs\obj\Debug\hrs.LogInForm.resources
