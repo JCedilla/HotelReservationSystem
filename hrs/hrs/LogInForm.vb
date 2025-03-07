@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Diagnostics.Eventing
 
 
 Public Class LogInForm
@@ -23,32 +24,38 @@ Public Class LogInForm
                     MsgBox("Username and Password cannot be blank!", vbExclamation, "Login Failed")
                     Exit Sub
                 End If
-                ' Check if connection was left open, Then closes it (for safety)
+
+                ' Check if connection was left open, then close it
                 If conn.State = ConnectionState.Open Then
                     conn.Close()
                 End If
 
                 conn.Open() ' Open SQL Connection
 
-                ' SQL query to check if there is a user in the table with the matching username and password
-                Dim query As String = "SELECT COUNT(*) FROM Users WHERE Username = @Username AND Password = @Password"
+                ' SQL query to check if there is a user with matching credentials
+                Dim query As String = "SELECT Username, Password, Role FROM Users WHERE Username = @Username AND Password = @Password"
                 Dim cmd As New SqlCommand(query, conn)
                 cmd.Parameters.AddWithValue("@Username", TxtUsername.Text)
                 cmd.Parameters.AddWithValue("@Password", TxtPassword.Text)
-                Dim result As Integer = Convert.ToInt32(cmd.ExecuteScalar())
 
-                If result > 0 Then
+                Dim reader As SqlDataReader = cmd.ExecuteReader() ' Execute the reader here
+
+                If reader.Read() Then
+                    GlobalVariables.LoggedInRole = reader("Role").ToString()
                     MsgBox("Login Successful!", vbInformation, "Success")
-                    Dim mainForm As New MainForm()
-                    mainForm.Show()
-                    Me.Close()
+
+                    Dim mainForm As New MainForm() ' Create instance of MainForm
+                    mainForm.Show() ' Use the instance to show the form
+                    Me.Close()      ' Close the login form
                 Else
                     MsgBox("Invalid Username or Password!", vbExclamation, "Login Failed")
                 End If
+
+                reader.Close() ' Close the reader after use
             Catch ex As Exception
                 MsgBox("Error: " & ex.Message)
             Finally
-                conn.Close()
+                conn.Close() ' Always close the connection
             End Try
         End Using
     End Sub
@@ -66,8 +73,8 @@ Public Class LogInForm
                 End If
 
                 ' Check if password length is less than 8 characters
-                If TxtPassword.Text.Length > 8 Then
-                    MsgBox("Password cannot exceed 8 characters!", vbExclamation, "Registration Failed")
+                If TxtPassword.Text.Length < 8 Then
+                    MsgBox("Password cannot be less than 8 characters!", vbExclamation, "Registration Failed")
                     Exit Sub
                 End If
 
@@ -104,5 +111,13 @@ Public Class LogInForm
                 conn.Close()
             End Try
         End Using
+    End Sub
+
+    Private Sub BtnShowPassword_Click(sender As Object, e As EventArgs) Handles BtnShowPassword.Click
+        If (TxtPassword.PasswordChar = "*") Then
+            TxtPassword.PasswordChar = ""
+        Else
+            TxtPassword.PasswordChar = "*"
+        End If
     End Sub
 End Class

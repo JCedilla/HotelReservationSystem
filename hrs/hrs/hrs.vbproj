@@ -86,6 +86,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HRS_DBDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HRS_DBDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HRS_DBDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="LogInForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +104,7 @@
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GlobalVariables.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -152,6 +158,17 @@
     </None>
     <None Include="HRS_DBDataSet1.xss">
       <DependentUpon>HRS_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HRS_DBDataSet2.xsc">
+      <DependentUpon>HRS_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HRS_DBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HRS_DBDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HRS_DBDataSet2.xss">
+      <DependentUpon>HRS_DBDataSet2.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

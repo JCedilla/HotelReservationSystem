@@ -58,6 +58,7 @@ Partial Class LogInForm
         Me.TxtPassword.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtPassword.Location = New System.Drawing.Point(300, 205)
         Me.TxtPassword.Name = "TxtPassword"
+        Me.TxtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtPassword.Size = New System.Drawing.Size(195, 30)
         Me.TxtPassword.TabIndex = 2
         '
