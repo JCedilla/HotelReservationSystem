@@ -23,18 +23,22 @@ Partial Class MainForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
         Me.BtnHotelPictures = New System.Windows.Forms.Button()
         Me.SideBar = New System.Windows.Forms.Panel()
         Me.BtnBook = New System.Windows.Forms.Button()
         Me.BtnViewBook = New System.Windows.Forms.Button()
         Me.BtnPolicy = New System.Windows.Forms.Button()
         Me.BtnLogOut = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.BtnManageBookings = New System.Windows.Forms.Button()
+        Me.AdminOnly = New System.Windows.Forms.GroupBox()
         Me.BtnViewUsers = New System.Windows.Forms.Button()
+        Me.BtnManageBookings = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.BookPanel = New System.Windows.Forms.Panel()
         Me.RoomTypePanel = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.BtnReserveNow = New System.Windows.Forms.Button()
         Me.Label73 = New System.Windows.Forms.Label()
         Me.TxtCost = New System.Windows.Forms.TextBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
@@ -163,12 +167,41 @@ Partial Class MainForm
         Me.BtnDouble = New System.Windows.Forms.RadioButton()
         Me.SingleBtn = New System.Windows.Forms.RadioButton()
         Me.ViewBookingPanel = New System.Windows.Forms.Panel()
+        Me.ReceiptBtn = New System.Windows.Forms.Button()
+        Me.Label75 = New System.Windows.Forms.Label()
+        Me.Label74 = New System.Windows.Forms.Label()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.FullnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AgeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ContactDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GenderDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RoomTypeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CheckInDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CheckOutDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalCostDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UserInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.HRS_DBDataSet2 = New hrs.HRS_DBDataSet2()
         Me.PolicyPanel = New System.Windows.Forms.Panel()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
         Me.ManageBookingsPanel = New System.Windows.Forms.Panel()
+        Me.DeleteUserName = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.TxtDeleteName = New System.Windows.Forms.TextBox()
+        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ViewUsersPanel = New System.Windows.Forms.Panel()
         Me.TxtUserIDDelete = New System.Windows.Forms.TextBox()
         Me.BtnDeleteUser = New System.Windows.Forms.Button()
@@ -185,40 +218,9 @@ Partial Class MainForm
         Me.HRS_DBDataSet = New hrs.HRS_DBDataSet()
         Me.HRSDBDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.UsersTableAdapter = New hrs.HRS_DBDataSet1TableAdapters.UsersTableAdapter()
-        Me.BtnReserveNow = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.HRS_DBDataSet2 = New hrs.HRS_DBDataSet2()
-        Me.UserInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.UserInformationTableAdapter = New hrs.HRS_DBDataSet2TableAdapters.UserInformationTableAdapter()
-        Me.FullnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AgeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ContactDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EmailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GenderDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RoomTypeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CheckInDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CheckOutDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalCostDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Label74 = New System.Windows.Forms.Label()
-        Me.Label75 = New System.Windows.Forms.Label()
-        Me.ReceiptBtn = New System.Windows.Forms.Button()
-        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TxtDeleteName = New System.Windows.Forms.TextBox()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.DeleteUserName = New System.Windows.Forms.Button()
-        Me.AdminOnly = New System.Windows.Forms.GroupBox()
         Me.SideBar.SuspendLayout()
+        Me.AdminOnly.SuspendLayout()
         Me.BookPanel.SuspendLayout()
         Me.RoomTypePanel.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -249,9 +251,13 @@ Partial Class MainForm
         CType(Me.DoublePicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SideBarVHR.SuspendLayout()
         Me.ViewBookingPanel.SuspendLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UserInformationBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HRS_DBDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PolicyPanel.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.ManageBookingsPanel.SuspendLayout()
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ViewUsersPanel.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -260,11 +266,6 @@ Partial Class MainForm
         Me.MainPanel.SuspendLayout()
         CType(Me.HRS_DBDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.HRSDBDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.HRS_DBDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UserInformationBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.AdminOnly.SuspendLayout()
         Me.SuspendLayout()
         '
         'BtnHotelPictures
@@ -341,14 +342,30 @@ Partial Class MainForm
         Me.BtnLogOut.Text = "Log Out"
         Me.BtnLogOut.UseVisualStyleBackColor = False
         '
-        'Label1
+        'AdminOnly
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(62, 5)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(66, 13)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "(Admin Only)"
+        Me.AdminOnly.Controls.Add(Me.BtnViewUsers)
+        Me.AdminOnly.Controls.Add(Me.BtnManageBookings)
+        Me.AdminOnly.Controls.Add(Me.Label1)
+        Me.AdminOnly.Location = New System.Drawing.Point(0, 312)
+        Me.AdminOnly.Name = "AdminOnly"
+        Me.AdminOnly.Size = New System.Drawing.Size(200, 150)
+        Me.AdminOnly.TabIndex = 9
+        Me.AdminOnly.TabStop = False
+        Me.AdminOnly.Text = "AdminOnly"
+        Me.AdminOnly.Visible = False
+        '
+        'BtnViewUsers
+        '
+        Me.BtnViewUsers.BackColor = System.Drawing.Color.Snow
+        Me.BtnViewUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnViewUsers.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnViewUsers.Location = New System.Drawing.Point(6, 19)
+        Me.BtnViewUsers.Name = "BtnViewUsers"
+        Me.BtnViewUsers.Size = New System.Drawing.Size(183, 57)
+        Me.BtnViewUsers.TabIndex = 3
+        Me.BtnViewUsers.Text = "View Users"
+        Me.BtnViewUsers.UseVisualStyleBackColor = False
         '
         'BtnManageBookings
         '
@@ -362,17 +379,14 @@ Partial Class MainForm
         Me.BtnManageBookings.Text = "Manage Bookings"
         Me.BtnManageBookings.UseVisualStyleBackColor = False
         '
-        'BtnViewUsers
+        'Label1
         '
-        Me.BtnViewUsers.BackColor = System.Drawing.Color.Snow
-        Me.BtnViewUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnViewUsers.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnViewUsers.Location = New System.Drawing.Point(6, 19)
-        Me.BtnViewUsers.Name = "BtnViewUsers"
-        Me.BtnViewUsers.Size = New System.Drawing.Size(183, 57)
-        Me.BtnViewUsers.TabIndex = 3
-        Me.BtnViewUsers.Text = "View Users"
-        Me.BtnViewUsers.UseVisualStyleBackColor = False
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(62, 5)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(66, 13)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = "(Admin Only)"
         '
         'BookPanel
         '
@@ -422,6 +436,30 @@ Partial Class MainForm
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(984, 463)
         Me.Panel2.TabIndex = 8
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.Gold
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Location = New System.Drawing.Point(712, 286)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(208, 52)
+        Me.Button9.TabIndex = 28
+        Me.Button9.Text = "View Reservation"
+        Me.Button9.UseVisualStyleBackColor = False
+        '
+        'BtnReserveNow
+        '
+        Me.BtnReserveNow.BackColor = System.Drawing.Color.Gold
+        Me.BtnReserveNow.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnReserveNow.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnReserveNow.Location = New System.Drawing.Point(498, 286)
+        Me.BtnReserveNow.Name = "BtnReserveNow"
+        Me.BtnReserveNow.Size = New System.Drawing.Size(208, 52)
+        Me.BtnReserveNow.TabIndex = 27
+        Me.BtnReserveNow.Text = "Reserve Now"
+        Me.BtnReserveNow.UseVisualStyleBackColor = False
         '
         'Label73
         '
@@ -1762,6 +1800,142 @@ Partial Class MainForm
         Me.ViewBookingPanel.Size = New System.Drawing.Size(984, 463)
         Me.ViewBookingPanel.TabIndex = 8
         '
+        'ReceiptBtn
+        '
+        Me.ReceiptBtn.BackColor = System.Drawing.Color.Cornsilk
+        Me.ReceiptBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ReceiptBtn.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ReceiptBtn.Location = New System.Drawing.Point(34, 235)
+        Me.ReceiptBtn.Name = "ReceiptBtn"
+        Me.ReceiptBtn.Size = New System.Drawing.Size(208, 52)
+        Me.ReceiptBtn.TabIndex = 19
+        Me.ReceiptBtn.Text = "Receipt"
+        Me.ReceiptBtn.UseVisualStyleBackColor = False
+        '
+        'Label75
+        '
+        Me.Label75.AutoSize = True
+        Me.Label75.Font = New System.Drawing.Font("Times New Roman", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label75.ForeColor = System.Drawing.Color.Snow
+        Me.Label75.Location = New System.Drawing.Point(24, 155)
+        Me.Label75.Name = "Label75"
+        Me.Label75.Size = New System.Drawing.Size(335, 31)
+        Me.Label75.TabIndex = 18
+        Me.Label75.Text = "Cancellation Of Reservation :"
+        '
+        'Label74
+        '
+        Me.Label74.AutoSize = True
+        Me.Label74.Font = New System.Drawing.Font("Times New Roman", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label74.ForeColor = System.Drawing.Color.Snow
+        Me.Label74.Location = New System.Drawing.Point(28, 197)
+        Me.Label74.Name = "Label74"
+        Me.Label74.Size = New System.Drawing.Size(793, 31)
+        Me.Label74.TabIndex = 17
+        Me.Label74.Text = "Please Contact An Admin To Cancel Your Reservation @09959417866"
+        '
+        'Button10
+        '
+        Me.Button10.BackColor = System.Drawing.Color.Cornsilk
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button10.Location = New System.Drawing.Point(0, 411)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(208, 52)
+        Me.Button10.TabIndex = 16
+        Me.Button10.Text = "Return"
+        Me.Button10.UseVisualStyleBackColor = False
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.AllowUserToAddRows = False
+        Me.DataGridView2.AllowUserToDeleteRows = False
+        Me.DataGridView2.AllowUserToResizeColumns = False
+        Me.DataGridView2.AllowUserToResizeRows = False
+        Me.DataGridView2.AutoGenerateColumns = False
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.FullnameDataGridViewTextBoxColumn, Me.AgeDataGridViewTextBoxColumn, Me.ContactDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn, Me.GenderDataGridViewTextBoxColumn, Me.RoomTypeDataGridViewTextBoxColumn, Me.CheckInDateDataGridViewTextBoxColumn, Me.CheckOutDateDataGridViewTextBoxColumn, Me.TotalCostDataGridViewTextBoxColumn})
+        Me.DataGridView2.DataSource = Me.UserInformationBindingSource
+        Me.DataGridView2.Location = New System.Drawing.Point(24, 31)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.ReadOnly = True
+        Me.DataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.DataGridView2.Size = New System.Drawing.Size(942, 118)
+        Me.DataGridView2.TabIndex = 0
+        '
+        'FullnameDataGridViewTextBoxColumn
+        '
+        Me.FullnameDataGridViewTextBoxColumn.DataPropertyName = "Fullname"
+        Me.FullnameDataGridViewTextBoxColumn.HeaderText = "Fullname"
+        Me.FullnameDataGridViewTextBoxColumn.Name = "FullnameDataGridViewTextBoxColumn"
+        Me.FullnameDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'AgeDataGridViewTextBoxColumn
+        '
+        Me.AgeDataGridViewTextBoxColumn.DataPropertyName = "Age"
+        Me.AgeDataGridViewTextBoxColumn.HeaderText = "Age"
+        Me.AgeDataGridViewTextBoxColumn.Name = "AgeDataGridViewTextBoxColumn"
+        Me.AgeDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'ContactDataGridViewTextBoxColumn
+        '
+        Me.ContactDataGridViewTextBoxColumn.DataPropertyName = "Contact"
+        Me.ContactDataGridViewTextBoxColumn.HeaderText = "Contact"
+        Me.ContactDataGridViewTextBoxColumn.Name = "ContactDataGridViewTextBoxColumn"
+        Me.ContactDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'EmailDataGridViewTextBoxColumn
+        '
+        Me.EmailDataGridViewTextBoxColumn.DataPropertyName = "Email"
+        Me.EmailDataGridViewTextBoxColumn.HeaderText = "Email"
+        Me.EmailDataGridViewTextBoxColumn.Name = "EmailDataGridViewTextBoxColumn"
+        Me.EmailDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'GenderDataGridViewTextBoxColumn
+        '
+        Me.GenderDataGridViewTextBoxColumn.DataPropertyName = "Gender"
+        Me.GenderDataGridViewTextBoxColumn.HeaderText = "Gender"
+        Me.GenderDataGridViewTextBoxColumn.Name = "GenderDataGridViewTextBoxColumn"
+        Me.GenderDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'RoomTypeDataGridViewTextBoxColumn
+        '
+        Me.RoomTypeDataGridViewTextBoxColumn.DataPropertyName = "RoomType"
+        Me.RoomTypeDataGridViewTextBoxColumn.HeaderText = "RoomType"
+        Me.RoomTypeDataGridViewTextBoxColumn.Name = "RoomTypeDataGridViewTextBoxColumn"
+        Me.RoomTypeDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'CheckInDateDataGridViewTextBoxColumn
+        '
+        Me.CheckInDateDataGridViewTextBoxColumn.DataPropertyName = "CheckInDate"
+        Me.CheckInDateDataGridViewTextBoxColumn.HeaderText = "CheckInDate"
+        Me.CheckInDateDataGridViewTextBoxColumn.Name = "CheckInDateDataGridViewTextBoxColumn"
+        Me.CheckInDateDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'CheckOutDateDataGridViewTextBoxColumn
+        '
+        Me.CheckOutDateDataGridViewTextBoxColumn.DataPropertyName = "CheckOutDate"
+        Me.CheckOutDateDataGridViewTextBoxColumn.HeaderText = "CheckOutDate"
+        Me.CheckOutDateDataGridViewTextBoxColumn.Name = "CheckOutDateDataGridViewTextBoxColumn"
+        Me.CheckOutDateDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'TotalCostDataGridViewTextBoxColumn
+        '
+        Me.TotalCostDataGridViewTextBoxColumn.DataPropertyName = "TotalCost"
+        Me.TotalCostDataGridViewTextBoxColumn.HeaderText = "TotalCost"
+        Me.TotalCostDataGridViewTextBoxColumn.Name = "TotalCostDataGridViewTextBoxColumn"
+        Me.TotalCostDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'UserInformationBindingSource
+        '
+        Me.UserInformationBindingSource.DataMember = "UserInformation"
+        Me.UserInformationBindingSource.DataSource = Me.HRS_DBDataSet2
+        '
+        'HRS_DBDataSet2
+        '
+        Me.HRS_DBDataSet2.DataSetName = "HRS_DBDataSet2"
+        Me.HRS_DBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'PolicyPanel
         '
         Me.PolicyPanel.BackColor = System.Drawing.Color.Gold
@@ -1826,6 +2000,118 @@ Partial Class MainForm
         Me.ManageBookingsPanel.Size = New System.Drawing.Size(984, 463)
         Me.ManageBookingsPanel.TabIndex = 8
         '
+        'DeleteUserName
+        '
+        Me.DeleteUserName.BackColor = System.Drawing.Color.Cornsilk
+        Me.DeleteUserName.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.DeleteUserName.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DeleteUserName.Location = New System.Drawing.Point(25, 243)
+        Me.DeleteUserName.Name = "DeleteUserName"
+        Me.DeleteUserName.Size = New System.Drawing.Size(230, 52)
+        Me.DeleteUserName.TabIndex = 18
+        Me.DeleteUserName.Text = "DELETE USER NAME :"
+        Me.DeleteUserName.UseVisualStyleBackColor = False
+        '
+        'Button11
+        '
+        Me.Button11.BackColor = System.Drawing.Color.Cornsilk
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button11.Location = New System.Drawing.Point(0, 409)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(208, 52)
+        Me.Button11.TabIndex = 17
+        Me.Button11.Text = "Return"
+        Me.Button11.UseVisualStyleBackColor = False
+        '
+        'TxtDeleteName
+        '
+        Me.TxtDeleteName.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtDeleteName.Location = New System.Drawing.Point(274, 247)
+        Me.TxtDeleteName.Name = "TxtDeleteName"
+        Me.TxtDeleteName.Size = New System.Drawing.Size(236, 45)
+        Me.TxtDeleteName.TabIndex = 2
+        '
+        'DataGridView3
+        '
+        Me.DataGridView3.AllowUserToAddRows = False
+        Me.DataGridView3.AllowUserToDeleteRows = False
+        Me.DataGridView3.AllowUserToResizeColumns = False
+        Me.DataGridView3.AllowUserToResizeRows = False
+        Me.DataGridView3.AutoGenerateColumns = False
+        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
+        Me.DataGridView3.DataSource = Me.UserInformationBindingSource
+        Me.DataGridView3.Location = New System.Drawing.Point(20, 58)
+        Me.DataGridView3.Name = "DataGridView3"
+        Me.DataGridView3.ReadOnly = True
+        Me.DataGridView3.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.DataGridView3.Size = New System.Drawing.Size(942, 118)
+        Me.DataGridView3.TabIndex = 1
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Fullname"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Fullname"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Age"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Age"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Contact"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Contact"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Email"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Email"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Gender"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Gender"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "RoomType"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "RoomType"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "CheckInDate"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "CheckInDate"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "CheckOutDate"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "CheckOutDate"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "TotalCost"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "TotalCost"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.ReadOnly = True
+        '
         'ViewUsersPanel
         '
         Me.ViewUsersPanel.BackColor = System.Drawing.Color.Gold
@@ -1860,6 +2146,9 @@ Partial Class MainForm
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToResizeColumns = False
+        Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.UserIDDataGridViewTextBoxColumn, Me.UsernameDataGridViewTextBoxColumn, Me.PasswordDataGridViewTextBoxColumn, Me.RoleDataGridViewTextBoxColumn})
@@ -1951,294 +2240,9 @@ Partial Class MainForm
         '
         Me.UsersTableAdapter.ClearBeforeFill = True
         '
-        'BtnReserveNow
-        '
-        Me.BtnReserveNow.BackColor = System.Drawing.Color.Gold
-        Me.BtnReserveNow.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnReserveNow.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnReserveNow.Location = New System.Drawing.Point(498, 286)
-        Me.BtnReserveNow.Name = "BtnReserveNow"
-        Me.BtnReserveNow.Size = New System.Drawing.Size(208, 52)
-        Me.BtnReserveNow.TabIndex = 27
-        Me.BtnReserveNow.Text = "Reserve Now"
-        Me.BtnReserveNow.UseVisualStyleBackColor = False
-        '
-        'Button9
-        '
-        Me.Button9.BackColor = System.Drawing.Color.Gold
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(712, 286)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(208, 52)
-        Me.Button9.TabIndex = 28
-        Me.Button9.Text = "View Reservation"
-        Me.Button9.UseVisualStyleBackColor = False
-        '
-        'DataGridView2
-        '
-        Me.DataGridView2.AllowUserToAddRows = False
-        Me.DataGridView2.AllowUserToDeleteRows = False
-        Me.DataGridView2.AllowUserToResizeColumns = False
-        Me.DataGridView2.AllowUserToResizeRows = False
-        Me.DataGridView2.AutoGenerateColumns = False
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.FullnameDataGridViewTextBoxColumn, Me.AgeDataGridViewTextBoxColumn, Me.ContactDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn, Me.GenderDataGridViewTextBoxColumn, Me.RoomTypeDataGridViewTextBoxColumn, Me.CheckInDateDataGridViewTextBoxColumn, Me.CheckOutDateDataGridViewTextBoxColumn, Me.TotalCostDataGridViewTextBoxColumn})
-        Me.DataGridView2.DataSource = Me.UserInformationBindingSource
-        Me.DataGridView2.Location = New System.Drawing.Point(24, 31)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.ReadOnly = True
-        Me.DataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.DataGridView2.Size = New System.Drawing.Size(942, 118)
-        Me.DataGridView2.TabIndex = 0
-        '
-        'HRS_DBDataSet2
-        '
-        Me.HRS_DBDataSet2.DataSetName = "HRS_DBDataSet2"
-        Me.HRS_DBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'UserInformationBindingSource
-        '
-        Me.UserInformationBindingSource.DataMember = "UserInformation"
-        Me.UserInformationBindingSource.DataSource = Me.HRS_DBDataSet2
-        '
         'UserInformationTableAdapter
         '
         Me.UserInformationTableAdapter.ClearBeforeFill = True
-        '
-        'FullnameDataGridViewTextBoxColumn
-        '
-        Me.FullnameDataGridViewTextBoxColumn.DataPropertyName = "Fullname"
-        Me.FullnameDataGridViewTextBoxColumn.HeaderText = "Fullname"
-        Me.FullnameDataGridViewTextBoxColumn.Name = "FullnameDataGridViewTextBoxColumn"
-        Me.FullnameDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'AgeDataGridViewTextBoxColumn
-        '
-        Me.AgeDataGridViewTextBoxColumn.DataPropertyName = "Age"
-        Me.AgeDataGridViewTextBoxColumn.HeaderText = "Age"
-        Me.AgeDataGridViewTextBoxColumn.Name = "AgeDataGridViewTextBoxColumn"
-        Me.AgeDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'ContactDataGridViewTextBoxColumn
-        '
-        Me.ContactDataGridViewTextBoxColumn.DataPropertyName = "Contact"
-        Me.ContactDataGridViewTextBoxColumn.HeaderText = "Contact"
-        Me.ContactDataGridViewTextBoxColumn.Name = "ContactDataGridViewTextBoxColumn"
-        Me.ContactDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'EmailDataGridViewTextBoxColumn
-        '
-        Me.EmailDataGridViewTextBoxColumn.DataPropertyName = "Email"
-        Me.EmailDataGridViewTextBoxColumn.HeaderText = "Email"
-        Me.EmailDataGridViewTextBoxColumn.Name = "EmailDataGridViewTextBoxColumn"
-        Me.EmailDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'GenderDataGridViewTextBoxColumn
-        '
-        Me.GenderDataGridViewTextBoxColumn.DataPropertyName = "Gender"
-        Me.GenderDataGridViewTextBoxColumn.HeaderText = "Gender"
-        Me.GenderDataGridViewTextBoxColumn.Name = "GenderDataGridViewTextBoxColumn"
-        Me.GenderDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'RoomTypeDataGridViewTextBoxColumn
-        '
-        Me.RoomTypeDataGridViewTextBoxColumn.DataPropertyName = "RoomType"
-        Me.RoomTypeDataGridViewTextBoxColumn.HeaderText = "RoomType"
-        Me.RoomTypeDataGridViewTextBoxColumn.Name = "RoomTypeDataGridViewTextBoxColumn"
-        Me.RoomTypeDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'CheckInDateDataGridViewTextBoxColumn
-        '
-        Me.CheckInDateDataGridViewTextBoxColumn.DataPropertyName = "CheckInDate"
-        Me.CheckInDateDataGridViewTextBoxColumn.HeaderText = "CheckInDate"
-        Me.CheckInDateDataGridViewTextBoxColumn.Name = "CheckInDateDataGridViewTextBoxColumn"
-        Me.CheckInDateDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'CheckOutDateDataGridViewTextBoxColumn
-        '
-        Me.CheckOutDateDataGridViewTextBoxColumn.DataPropertyName = "CheckOutDate"
-        Me.CheckOutDateDataGridViewTextBoxColumn.HeaderText = "CheckOutDate"
-        Me.CheckOutDateDataGridViewTextBoxColumn.Name = "CheckOutDateDataGridViewTextBoxColumn"
-        Me.CheckOutDateDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'TotalCostDataGridViewTextBoxColumn
-        '
-        Me.TotalCostDataGridViewTextBoxColumn.DataPropertyName = "TotalCost"
-        Me.TotalCostDataGridViewTextBoxColumn.HeaderText = "TotalCost"
-        Me.TotalCostDataGridViewTextBoxColumn.Name = "TotalCostDataGridViewTextBoxColumn"
-        Me.TotalCostDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'Button10
-        '
-        Me.Button10.BackColor = System.Drawing.Color.Cornsilk
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button10.Location = New System.Drawing.Point(0, 411)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(208, 52)
-        Me.Button10.TabIndex = 16
-        Me.Button10.Text = "Return"
-        Me.Button10.UseVisualStyleBackColor = False
-        '
-        'Label74
-        '
-        Me.Label74.AutoSize = True
-        Me.Label74.Font = New System.Drawing.Font("Times New Roman", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label74.ForeColor = System.Drawing.Color.Snow
-        Me.Label74.Location = New System.Drawing.Point(28, 197)
-        Me.Label74.Name = "Label74"
-        Me.Label74.Size = New System.Drawing.Size(793, 31)
-        Me.Label74.TabIndex = 17
-        Me.Label74.Text = "Please Contact An Admin To Cancel Your Reservation @09959417866"
-        '
-        'Label75
-        '
-        Me.Label75.AutoSize = True
-        Me.Label75.Font = New System.Drawing.Font("Times New Roman", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label75.ForeColor = System.Drawing.Color.Snow
-        Me.Label75.Location = New System.Drawing.Point(24, 155)
-        Me.Label75.Name = "Label75"
-        Me.Label75.Size = New System.Drawing.Size(335, 31)
-        Me.Label75.TabIndex = 18
-        Me.Label75.Text = "Cancellation Of Reservation :"
-        '
-        'ReceiptBtn
-        '
-        Me.ReceiptBtn.BackColor = System.Drawing.Color.Cornsilk
-        Me.ReceiptBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ReceiptBtn.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ReceiptBtn.Location = New System.Drawing.Point(34, 235)
-        Me.ReceiptBtn.Name = "ReceiptBtn"
-        Me.ReceiptBtn.Size = New System.Drawing.Size(208, 52)
-        Me.ReceiptBtn.TabIndex = 19
-        Me.ReceiptBtn.Text = "Receipt"
-        Me.ReceiptBtn.UseVisualStyleBackColor = False
-        '
-        'DataGridView3
-        '
-        Me.DataGridView3.AllowUserToAddRows = False
-        Me.DataGridView3.AllowUserToDeleteRows = False
-        Me.DataGridView3.AllowUserToResizeColumns = False
-        Me.DataGridView3.AllowUserToResizeRows = False
-        Me.DataGridView3.AutoGenerateColumns = False
-        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
-        Me.DataGridView3.DataSource = Me.UserInformationBindingSource
-        Me.DataGridView3.Location = New System.Drawing.Point(20, 58)
-        Me.DataGridView3.Name = "DataGridView3"
-        Me.DataGridView3.ReadOnly = True
-        Me.DataGridView3.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.DataGridView3.Size = New System.Drawing.Size(942, 118)
-        Me.DataGridView3.TabIndex = 1
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Fullname"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Fullname"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Age"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Age"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Contact"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Contact"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Email"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Email"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Gender"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Gender"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "RoomType"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "RoomType"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "CheckInDate"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "CheckInDate"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "CheckOutDate"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "CheckOutDate"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        Me.DataGridViewTextBoxColumn8.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "TotalCost"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "TotalCost"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        Me.DataGridViewTextBoxColumn9.ReadOnly = True
-        '
-        'TxtDeleteName
-        '
-        Me.TxtDeleteName.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtDeleteName.Location = New System.Drawing.Point(274, 247)
-        Me.TxtDeleteName.Name = "TxtDeleteName"
-        Me.TxtDeleteName.Size = New System.Drawing.Size(236, 45)
-        Me.TxtDeleteName.TabIndex = 2
-        '
-        'Button11
-        '
-        Me.Button11.BackColor = System.Drawing.Color.Cornsilk
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.Location = New System.Drawing.Point(0, 409)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(208, 52)
-        Me.Button11.TabIndex = 17
-        Me.Button11.Text = "Return"
-        Me.Button11.UseVisualStyleBackColor = False
-        '
-        'DeleteUserName
-        '
-        Me.DeleteUserName.BackColor = System.Drawing.Color.Cornsilk
-        Me.DeleteUserName.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.DeleteUserName.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DeleteUserName.Location = New System.Drawing.Point(25, 243)
-        Me.DeleteUserName.Name = "DeleteUserName"
-        Me.DeleteUserName.Size = New System.Drawing.Size(230, 52)
-        Me.DeleteUserName.TabIndex = 18
-        Me.DeleteUserName.Text = "DELETE USER NAME :"
-        Me.DeleteUserName.UseVisualStyleBackColor = False
-        '
-        'AdminOnly
-        '
-        Me.AdminOnly.Controls.Add(Me.BtnViewUsers)
-        Me.AdminOnly.Controls.Add(Me.BtnManageBookings)
-        Me.AdminOnly.Controls.Add(Me.Label1)
-        Me.AdminOnly.Location = New System.Drawing.Point(0, 312)
-        Me.AdminOnly.Name = "AdminOnly"
-        Me.AdminOnly.Size = New System.Drawing.Size(200, 150)
-        Me.AdminOnly.TabIndex = 9
-        Me.AdminOnly.TabStop = False
-        Me.AdminOnly.Text = "AdminOnly"
-        Me.AdminOnly.Visible = False
         '
         'MainForm
         '
@@ -2246,16 +2250,19 @@ Partial Class MainForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(984, 461)
         Me.Controls.Add(Me.MainPanel)
+        Me.Controls.Add(Me.ViewUsersPanel)
+        Me.Controls.Add(Me.ViewBookingPanel)
         Me.Controls.Add(Me.ManageBookingsPanel)
         Me.Controls.Add(Me.BookPanel)
-        Me.Controls.Add(Me.ViewBookingPanel)
         Me.Controls.Add(Me.ViewHotelRoomsPanel)
         Me.Controls.Add(Me.PolicyPanel)
-        Me.Controls.Add(Me.ViewUsersPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MainForm"
-        Me.Text = "MainForm"
+        Me.Text = "Cozy Hotel"
         Me.SideBar.ResumeLayout(False)
+        Me.AdminOnly.ResumeLayout(False)
+        Me.AdminOnly.PerformLayout()
         Me.BookPanel.ResumeLayout(False)
         Me.RoomTypePanel.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
@@ -2302,11 +2309,15 @@ Partial Class MainForm
         Me.SideBarVHR.PerformLayout()
         Me.ViewBookingPanel.ResumeLayout(False)
         Me.ViewBookingPanel.PerformLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UserInformationBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HRS_DBDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PolicyPanel.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ManageBookingsPanel.ResumeLayout(False)
         Me.ManageBookingsPanel.PerformLayout()
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ViewUsersPanel.ResumeLayout(False)
         Me.ViewUsersPanel.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2317,12 +2328,6 @@ Partial Class MainForm
         Me.MainPanel.PerformLayout()
         CType(Me.HRS_DBDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.HRSDBDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.HRS_DBDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UserInformationBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.AdminOnly.ResumeLayout(False)
-        Me.AdminOnly.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

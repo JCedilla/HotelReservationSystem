@@ -68,7 +68,7 @@ Public Class LogInForm
             Try
                 ' Check if username and password texts are empty
                 If TxtUsername.Text = "" Or TxtPassword.Text = "" Then
-                    MsgBox("Username and Password cannot be blank!", vbExclamation, "Registration Failed")
+                    MsgBox("Username or Password cannot be blank!", vbExclamation, "Registration Failed")
                     Exit Sub
                 End If
 

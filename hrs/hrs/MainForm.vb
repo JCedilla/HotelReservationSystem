@@ -5,7 +5,7 @@ Public Class MainForm
     Dim connString As String = "Server=LAPTOP-BJPABT2F\SQLEXPRESS;Initial Catalog=HRS_DB; Integrated Security=True;"
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        MsgBox("Role: " & GlobalVariables.LoggedInRole) ' Debug
+        'MsgBox("Role: " & GlobalVariables.LoggedInRole) ' Debug
         AdminOnly.Visible = False ' Reset visibility first
 
 
@@ -21,6 +21,7 @@ Public Class MainForm
 
         'TODO: This line of code loads data into the 'HRS_DBDataSet2.UserInformation' table. You can move, or remove it, as needed.
         Me.UserInformationTableAdapter.Fill(Me.HRS_DBDataSet2.UserInformation)
+
         Label35.Text = "Welcome to Cozy Hotels! Please review our reservation guidelines:
 
 Check-In/Check-Out:
@@ -92,9 +93,28 @@ Thank you for choosing Cozy Hotels — your home away from home!"
         MainPanel.Visible = False
     End Sub
 
-    Private Sub BtnViewBook_Click(sender As Object, e As EventArgs) Handles BtnViewBook.Click
+    Private Sub LoadBookings2()
+        Try
+            Using conn As New SqlConnection(connString)
+                Dim adapter As New SqlDataAdapter("SELECT * FROM UserInformation", conn) ' Fetch all bookings
+                Dim table As New DataTable()
+                adapter.Fill(table) ' Fill DataTable with results
+                DataGridView2.DataSource = table ' Set DataGridView3 source
+            End Using
+        Catch ex As Exception
+            MsgBox("Error loading bookings: " & ex.Message, vbCritical, "Error")
+        End Try
+    End Sub
+
+    Private Sub BtnViewBook_Click(sender As Object, e As EventArgs) Handles BtnViewBook.Click, Button9.Click
         ViewBookingPanel.Visible = True
         MainPanel.Visible = False
+        ViewUsersPanel.Visible = False
+        ManageBookingsPanel.Visible = False
+        ViewHotelRoomsPanel.Visible = False
+        PolicyPanel.Visible = False
+        BookPanel.Visible = False
+        LoadBookings2()
     End Sub
 
     Private Sub BtnPolicy_Click(sender As Object, e As EventArgs) Handles BtnPolicy.Click
@@ -174,6 +194,8 @@ Thank you for choosing Cozy Hotels — your home away from home!"
     Private Sub BtnManageBookings_Click(sender As Object, e As EventArgs) Handles BtnManageBookings.Click
         ManageBookingsPanel.Visible = True
         MainPanel.Visible = False
+        LoadBookings2()
+        LoadBookings()
     End Sub
 
     Private Sub BtnReturn_Click(sender As Object, e As EventArgs) Handles Button4.Click, Button3.Click, Button2.Click, Button1.Click, Button10.Click, Button11.Click
@@ -516,7 +538,7 @@ Thank you for choosing Cozy Hotels — your home away from home!"
         RoomTypePanel.Visible = False
     End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+    Private Sub Button9_Click(sender As Object, e As EventArgs)
         ViewBookingPanel.Visible = True
         BookPanel.Visible = False
         ViewUsersPanel.Visible = False
@@ -546,6 +568,20 @@ Thank you for choosing Cozy Hotels — your home away from home!"
         MsgBox(receiptMessage, vbInformation, "Reservation Receipt")
     End Sub
 
+    Private Sub LoadBookings()
+        Try
+            Using conn As New SqlConnection(connString)
+                Dim adapter As New SqlDataAdapter("SELECT * FROM UserInformation", conn) ' Fetch all bookings
+                Dim table As New DataTable()
+                adapter.Fill(table) ' Fill DataTable with results
+                DataGridView3.DataSource = table ' Set DataGridView3 source
+            End Using
+        Catch ex As Exception
+            MsgBox("Error loading bookings: " & ex.Message, vbCritical, "Error")
+        End Try
+    End Sub
+
+
     Private Sub DeleteUserName_Click(sender As Object, e As EventArgs) Handles DeleteUserName.Click
         Dim fullname As String = TxtDeleteName.Text
 
@@ -567,7 +603,7 @@ Thank you for choosing Cozy Hotels — your home away from home!"
 
                         If rowsAffected > 0 Then
                             MsgBox("User deleted successfully!", vbInformation, "Success")
-                            LoadUsers() ' Refresh DataGridView
+                            LoadBookings() ' Refresh DataGridView
                         Else
                             MsgBox("User not found.", vbExclamation, "Error")
                         End If

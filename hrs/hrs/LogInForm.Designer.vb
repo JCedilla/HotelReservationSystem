@@ -22,6 +22,7 @@ Partial Class LogInForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LogInForm))
         Me.BtnLogin = New System.Windows.Forms.Button()
         Me.BtnRegister = New System.Windows.Forms.Button()
         Me.TxtPassword = New System.Windows.Forms.TextBox()
@@ -35,23 +36,27 @@ Partial Class LogInForm
         '
         'BtnLogin
         '
+        Me.BtnLogin.BackColor = System.Drawing.Color.Gold
+        Me.BtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnLogin.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnLogin.Location = New System.Drawing.Point(300, 239)
         Me.BtnLogin.Name = "BtnLogin"
         Me.BtnLogin.Size = New System.Drawing.Size(195, 38)
         Me.BtnLogin.TabIndex = 0
         Me.BtnLogin.Text = "Log In"
-        Me.BtnLogin.UseVisualStyleBackColor = True
+        Me.BtnLogin.UseVisualStyleBackColor = False
         '
         'BtnRegister
         '
+        Me.BtnRegister.BackColor = System.Drawing.Color.Gold
+        Me.BtnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnRegister.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnRegister.Location = New System.Drawing.Point(300, 280)
         Me.BtnRegister.Name = "BtnRegister"
         Me.BtnRegister.Size = New System.Drawing.Size(195, 38)
         Me.BtnRegister.TabIndex = 1
         Me.BtnRegister.Text = "Register"
-        Me.BtnRegister.UseVisualStyleBackColor = True
+        Me.BtnRegister.UseVisualStyleBackColor = False
         '
         'TxtPassword
         '
@@ -73,6 +78,7 @@ Partial Class LogInForm
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Gold
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(352, 180)
         Me.Label1.Name = "Label1"
@@ -83,6 +89,7 @@ Partial Class LogInForm
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Gold
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(352, 116)
         Me.Label2.Name = "Label2"
@@ -93,6 +100,7 @@ Partial Class LogInForm
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Gold
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 40.0!)
         Me.Label3.Location = New System.Drawing.Point(280, 9)
         Me.Label3.Name = "Label3"
@@ -103,6 +111,7 @@ Partial Class LogInForm
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Gold
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 40.0!)
         Me.Label4.Location = New System.Drawing.Point(263, 391)
         Me.Label4.Name = "Label4"
@@ -112,13 +121,15 @@ Partial Class LogInForm
         '
         'BtnShowPassword
         '
+        Me.BtnShowPassword.BackColor = System.Drawing.Color.Gold
+        Me.BtnShowPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnShowPassword.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnShowPassword.Location = New System.Drawing.Point(501, 205)
         Me.BtnShowPassword.Name = "BtnShowPassword"
         Me.BtnShowPassword.Size = New System.Drawing.Size(37, 30)
         Me.BtnShowPassword.TabIndex = 8
         Me.BtnShowPassword.Text = "👁"
-        Me.BtnShowPassword.UseVisualStyleBackColor = True
+        Me.BtnShowPassword.UseVisualStyleBackColor = False
         '
         'LogInForm
         '
@@ -135,6 +146,7 @@ Partial Class LogInForm
         Me.Controls.Add(Me.TxtPassword)
         Me.Controls.Add(Me.BtnRegister)
         Me.Controls.Add(Me.BtnLogin)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "LogInForm"
         Me.Text = "Cozy Hotel"
         Me.ResumeLayout(False)

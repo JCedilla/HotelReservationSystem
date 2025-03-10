@@ -47,6 +47,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>DALL·E-2025-03-10-10.19.42-A-modern-and-cozy-hotel-reservation-app-icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -205,6 +208,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\180329165216-royal-suite-at-the-burj-al-arab-jumeirah.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DALL·E-2025-03-10-10.19.42-A-modern-and-cozy-hotel-reservation-app-icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
